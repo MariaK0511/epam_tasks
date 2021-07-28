@@ -6,7 +6,6 @@ public class Task07 {
         int length = 8;
         int width = length / 2;
         int S = length * width;
-
         System.out.println("При width = " + width  + " length = " + length + " S = " + S );
     }
 }
