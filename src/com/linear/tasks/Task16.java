@@ -1,4 +1,4 @@
-package Module1;
+package com.linear.tasks;
 
 public class Task16 {
     // не поняла
@@ -26,7 +26,6 @@ public class Task16 {
         double avgGeometric = Math.sqrt(Math.abs(number1) * Math.abs(number2));
         System.out.println("Среднее арифметическое кубов чисел равно " + avgArithmetic);
         System.out.println("Среднее геометрическое модулей чисел равно " + avgGeometric);
-        System.out.println();
     }
 
     private static void task18() {

@@ -1,7 +1,7 @@
-package Module1;
+package com.linear.tasks;
 
 public class Task11 {
-    public static void main( String [] args) {
+    public static void main(String[] args) {
         // 11. Вычислить периметр и площадь прямоугольного треугольника по длинам а и b двух катетов.
         double a = 4.0;
         double b = 6.0;

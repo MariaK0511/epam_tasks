@@ -1,4 +1,4 @@
-package Module1;
+package com.linear.tasks;
 
 public class Task2 {
     //2. Найдите значение функции: с = 3 + а

@@ -1,4 +1,4 @@
-package Module1;
+package com.linear.tasks;
 
 // Составить линейную программу, печатающую значение true, если указанное высказывание является истинным, и false — в противном случае
 public class Task37 {

@@ -1,4 +1,4 @@
-package Module1;
+package com.linear.tasks;
 
 public class Task1 {
     //1. Даны два действительных числа х и у. Вычислить их сумму, разность, произведение и частное.
