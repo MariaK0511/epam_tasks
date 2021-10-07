@@ -29,6 +29,7 @@ public class TaskFrom31to40 {
             System.out.println("Computer number = " + myRandom);
             if (num1 == myRandom) {
                 System.out.println("right num " + num1);
+
                 continue;
             }
             if (num2 == myRandom) {
