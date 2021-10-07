@@ -1,8 +1,8 @@
-package Module2;
+package com.brunch.tasks;
 
 import java.util.Scanner;
 
-public class Tasks1and2and3and4and5and6and6and7 {
+public class TasksFrom1to7 {
     public static void main(String[] args) {
         tak1();
         task2();
@@ -38,9 +38,9 @@ public class Tasks1and2and3and4and5and6and6and7 {
     private static void task3() {
         //3. Составить программу сравнения введенного числа а и цифры 3. Вывести на экран слово «yes», если число а меньше 3; если больше, то вывести слово «no»
         int a = 6;
-        if (a > 3) {
+        if (a < 3) {
             System.out.println("yes");
-        } else if (a < 6) {
+        } else if (a > 3) {
             System.out.println("no");
         }
     }
@@ -78,7 +78,7 @@ public class Tasks1and2and3and4and5and6and6and7 {
         int x = 2;
         int result = a * x * x + b * x + c;
         if (x > 0) {
-            System.out.println(result * a);
+            System.out.println(result * Math.abs(a));
         } else
             System.out.println(result);
     }
@@ -87,7 +87,6 @@ public class Tasks1and2and3and4and5and6and6and7 {
         // Составить программу: определения наибольшего из двух чисел а и b.
         int a = 14;
         int b = 10;
-
         if (a > b) {
             System.out.println("Число а = " + a + " больше числа b = " + b);
         } else if (a == b) {
