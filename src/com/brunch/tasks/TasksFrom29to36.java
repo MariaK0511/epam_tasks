@@ -1,4 +1,4 @@
-package Module2;
+package com.brunch.tasks;
 
 import java.util.Scanner;
 
@@ -57,7 +57,7 @@ public class TasksFrom29to36 {
         System.out.println("task31 >> ");
         int a = sc.nextInt();
         int b = sc.nextInt();
-
+        System.out.println("Введите размеры кирпича");
         int x = sc.nextInt();
         int y = sc.nextInt();
         int z = sc.nextInt();
