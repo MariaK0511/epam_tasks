@@ -1,4 +1,4 @@
-package Module2;
+package com.brunch.tasks;
 
 import java.util.Scanner;
 import java.lang.Math;
@@ -58,27 +58,36 @@ public class TasksFrom21to28 {
         int data = sc.nextInt();
         System.out.println("Введите месяц от 1 до 12");
         int month = sc.nextInt();
-        if (month < 1 && month > 12) {
+
+        if (month <= 0 || month > 12) {
             System.out.println("Неверно введен месяц!");
-        } else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+        }
+
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
             System.out.println("Месяц " + month + " дней в этом месяце 31");
-        } else if (month == 2) {
+        } else if (data > 31) {
+            System.out.println("error");
+        }
+
+        if (month == 2) {
             System.out.println("Месяц " + month + " дней в этом месяце 28");
-        } else {
-            System.out.println("Месяц " + month + " дней в этом месяце 30");
+        } else if (data > 28) {
+            System.out.println("error");
         }
-        if (data < 1 && data > 31) {
-            System.out.println("Неверная дата");
-        } else {
-            System.out.println("Дата введена корректно");
+
+        if (month == 4 || month == 6 || month == 9 || month == 11) {
+                System.out.println("Месяц " + month + ", дней в этом месяце 30");
+            } else if (data > 30) {
+                System.out.println("error");
+            }
         }
-    }
+
 
     private static void task24() {
         //Составить программу, определяющую результат гадания на ромашке - "любит - не любит", взяв за исходное данное кол-во лепестков n.
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
         System.out.println("task24 >> ");
+        int n = sc.nextInt();
         System.out.println("Число " + n + " значит, что " + " ");
         if (n % 2 == 0) {
             System.out.println("любит");
