@@ -1,8 +1,8 @@
-package Module2;
+package com.brunch.tasks;
 
 import java.util.Scanner;
 
-public class Tasks8and9and10and11and12and13 {
+public class TasksFrom8to13 {
     public static void main(String[] args) {
         task8();
         task9();
@@ -14,6 +14,15 @@ public class Tasks8and9and10and11and12and13 {
 
     private static void task8() {
         //8. Составить программу нахождения наименьшего из квадратов двух чисел а и b.
+        int a = 7;
+        int b = 4;
+        int square;
+        if (a < b) {
+            square = a * a;
+        } else {
+            square = b * b;
+        }
+        System.out.println(square);
     }
 
     private static void task9() {
@@ -53,8 +62,8 @@ public class Tasks8and9and10and11and12and13 {
         int b1 = sc.nextInt();
         int a2 = sc.nextInt();
         int b2 = sc.nextInt();
-        int s1 = (a1 + b1) / 2;
-        int s2 = (a2 + b2) / 2;
+        int s1 = (a1 * b1) / 2;
+        int s2 = (a2 * b2) / 2;
         if (s1 > s2) {
             System.out.println("Площадь первого треугольника больше площади второго треугольника " + s1);
         } else if (s1 == s2) {
@@ -71,17 +80,17 @@ public class Tasks8and9and10and11and12and13 {
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
         int num3 = sc.nextInt();
-        if (num1 > 0) {
+        if (num1 >= 0) {
             System.out.println(Math.pow(num1, 2));
         } else {
             System.out.println(Math.pow(num1, 4));
         }
-        if (num2 > 0) {
+        if (num2 >= 0) {
             System.out.println(Math.pow(num2, 2));
         } else {
             System.out.println(Math.pow(num2, 4));
         }
-        if (num3 > 0) {
+        if (num3 >= 0) {
             System.out.println(Math.pow(num3, 2));
         } else {
             System.out.println(Math.pow(num3, 4));
