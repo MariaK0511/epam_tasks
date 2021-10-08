@@ -1,4 +1,4 @@
-package Module2;
+package com.brunch.tasks;
 
 import java.util.Scanner;
 
@@ -17,8 +17,9 @@ public class TasksFrom14to20 {
         //Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли он прямоугольным.
         int corner1 = 60;
         int corner2 = 90;
-        int corner3 = 180 - (corner1 + corner2);
-        if (corner1 + corner2 < 180) {
+        int sumCornerOneAndTwo = corner1 + corner2;
+        int corner3 = 180 - (sumCornerOneAndTwo);
+        if (sumCornerOneAndTwo < 180) {
             System.out.println("Такой треугольник существует");
         } else if (corner1 == 90 || corner2 == 90 || corner3 == 90) {
             System.out.println("Такой треугольник является прямоугольным");
@@ -34,11 +35,11 @@ public class TasksFrom14to20 {
         int newX;
         int newY;
         if (x > y) {
-            newX = (x + y) / 2;
-            newY = (x * y) * 2;
+            newX = (x + y) * 2;
+            newY = (x * y) / 2;
         } else {
-            newY = (x + y) / 2;
-            newX = (x * y) * 2;
+            newY = (x + y) * 2;
+            newX = (x * y) / 2;
         }
         System.out.println("Числа " + x + " " + y + " заменены на " + newX + " " + newY);
     }
@@ -76,7 +77,7 @@ public class TasksFrom14to20 {
             } else {
                 m = n;
             }
-        } else if (m == n) {
+        } else {
             m = 0;
             n = 0;
         }
@@ -111,13 +112,7 @@ public class TasksFrom14to20 {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int count = 0;
-        if (a > 0) {
-            count++;
-        }
-        if (b > 0) {
-            count++;
-        }
-        if (c > 0) {
+        if ((a > 0) || (b > 0) || (c > 0)) {
             count++;
         }
         System.out.println("Положительных чисел " + count);
