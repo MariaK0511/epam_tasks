@@ -76,10 +76,7 @@ public class TasksFrom1to7 {
         int b = 10;
         int c = 12;
         int x = 2;
-        int result = a * x * x + b * x + c;
-        if (x > 0) {
-            System.out.println(result * Math.abs(a));
-        } else
+        int result = Math.abs(a*x*x+b*x+c);
             System.out.println(result);
     }
 
