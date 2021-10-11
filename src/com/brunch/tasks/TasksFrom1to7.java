@@ -70,17 +70,17 @@ public class TasksFrom1to7 {
     }
 
     public static void task6() {
-        //7. Составить программу нахождения модуля выражения a*x*x + b*x + c при заданных значениях a, b, c и х
-        //не совсем понимаю как с модулями решать
+        //7. Составить программу нахождения модуля выражения a*x*x + b*x + c
+        // при заданных значениях a, b, c и х
         int a = 3;
         int b = 10;
         int c = 12;
         int x = 2;
         int result = a * x * x + b * x + c;
-        if (x > 0) {
-            System.out.println(result * Math.abs(a));
-        } else
+        if (result > 0) {
             System.out.println(result);
+        } else
+            System.out.println(Math.abs(result));
     }
 
     private static void task7() {
