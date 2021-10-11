@@ -76,11 +76,11 @@ public class TasksFrom21to28 {
         }
 
         if (month == 4 || month == 6 || month == 9 || month == 11) {
-                System.out.println("Месяц " + month + ", дней в этом месяце 30");
-            } else if (data > 30) {
-                System.out.println("error");
-            }
+            System.out.println("Месяц " + month + ", дней в этом месяце 30");
+        } else if (data > 30) {
+            System.out.println("error");
         }
+    }
 
 
     private static void task24() {
@@ -116,21 +116,31 @@ public class TasksFrom21to28 {
         int num = sc.nextInt();
         int num2 = sc.nextInt();
         int num3 = sc.nextInt();
+        int max = 0;
+        int min = 0;
         if (num > num2 && num > num3) {
+            max = num;
             System.out.println(num + " - " + " максимальное из трёх чисел");
         } else if (num < num2 && num < num3) {
+            min = num;
             System.out.println(num + " - " + " минимальное из трёх чисел");
         }
         if (num2 > num && num2 > num3) {
+            max = num2;
             System.out.println(num2 + " - " + " максимальное из трёх чисел");
         } else if (num2 < num && num2 < num3) {
+            min = num2;
             System.out.println(num2 + " - " + " минимальное из трёх чисел");
         }
         if (num3 > num2 && num3 > num) {
+            max = num3;
             System.out.println(num3 + " - " + " максимальное из трёх чисел");
         } else if (num3 < num2 && num3 < num) {
+            min = num3;
             System.out.println(num3 + " - " + " минимальное из трёх чисел");
         }
+        int sum = max + min;
+        System.out.println(sum);
     }
 
     private static void task27() {
